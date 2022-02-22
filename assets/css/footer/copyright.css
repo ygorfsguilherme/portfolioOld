@@ -1,0 +1,45 @@
+.social {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	margin: 10px 0;
+}
+
+.github, .linkedin, .telegram{
+	display: flex;
+	align-items: center;
+	height: 30px;
+	width: auto;
+	margin: 5px 8px;
+	padding: 3px;
+	transition: 0.4s all;
+}
+
+.github:hover, .linkedin:hover, .telegram:hover{
+	transform: scale(1.4);
+	cursor: pointer;
+}
+
+.github:hover svg {
+	fill: #6B2A89;
+}
+
+.linkedin:hover svg{
+	fill: #0E76A8;
+}
+
+.telegram:hover svg{
+	fill: #29A1D4;
+}
+
+.copyright { 
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	padding: 1rem;
+	margin: 1rem;
+	gap: 10px;
+}

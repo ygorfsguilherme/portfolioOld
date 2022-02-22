@@ -1,0 +1,60 @@
+header {
+	background: url("../../img/perfil/bg-header.jpg") no-repeat center/cover;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 1rem;
+	font-weight: 600;
+	color: var(--white-300);
+}
+
+.perfil {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 200px;
+}
+
+#perfil__img {
+	border: 4px #fff solid;
+	border-radius: 50%;
+	margin: 10px auto;
+	width: 150px;
+	height: 150px;
+}
+
+.perfil__informacao {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.perfil__aniversario, .perfil__localizacao {
+	display: flex;
+	align-items: center;
+	text-shadow: 2px 2px 14px rgba(0,0,0,0.65);
+}
+
+.perfil__aniversario > svg, .perfil__localizacao > svg {
+	height: 22px;
+	margin-right: 10px;
+	fill: var(--white-300);
+}
+
+.perfil__sobre {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+@media screen and (min-width:  0px){
+	header {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 930px){
+	header {
+		flex-direction: row;
+	}
+}

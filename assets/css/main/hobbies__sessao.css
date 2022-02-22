@@ -1,0 +1,135 @@
+.hobbies__meu__card{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+
+.hobbies__icon {
+	background: #7AC4C5;
+}
+
+.hobbies__meu__card p{
+	max-width: 200px;
+	padding: 0 5px;
+}
+
+@media screen and (min-width:  0px){
+	.hobbies__meu__card {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.hobbies__meu__card .icon {
+		margin-right: 0;
+	}
+
+	.hobbies__meu {
+		display: grid;
+		justify-content: center;
+		margin: 20px;
+		grid-template-columns: 1;
+		grid-template-rows: 3;
+	}
+
+	.hobbies__meu .leitura{
+		grid-area: leitura;
+		grid-row: 1;
+	}
+
+	.hobbies__meu .cozinha{
+		grid-area: cozinha;
+		grid-row: 2;
+	}
+
+	.hobbies__meu .filme{
+		grid-area: filme;
+		grid-row: 3;
+	}
+	
+	.hobbies__meu__card {
+		justify-content:center;
+		align-items: center;
+		width: auto;
+	}
+
+	.hobbies__meu__card .icon {
+		margin-right: 0;
+	}
+
+	/*  Habilidades (Skills) */
+
+}
+
+@media screen and (min-width: 369px){
+	.hobbies__meu__card {
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 690px){
+	.hobbies__meu {
+		grid-template-columns: 2;
+		grid-template-rows: 2;
+		justify-content: space-around;
+	}
+
+	.hobbies__meu .leitura{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.hobbies__meu .cozinha{
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.hobbies__meu .filme{
+		grid-column: 1 / 3;
+		grid-row: 3;
+	}
+}
+
+@media screen and (min-width: 930px){
+	.hobbies__meu {
+		grid-template-columns: 3;
+		grid-template-rows: 1;
+		justify-content: space-between;
+	}
+
+	.hobbies__meu .leitura{
+		grid-area: leitura;
+		grid-column: 1 / 2;
+	}
+
+	.hobbies__meu .cozinha{
+		grid-area: cozinha;
+		grid-column: 2 / 3;
+
+	}
+
+	.hobbies__meu .filme{
+		grid-area: filme;
+		grid-column: 3 / 4;
+	}
+
+	.hobbies__meu__card {
+		flex-direction: column;
+	}
+
+	.hobbies__meu__card p{
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1100px){
+	.hobbies__meu__card {
+		flex-direction: row;
+	}
+
+	.hobbies__meu__card p{
+		text-align: start;
+	}
+}

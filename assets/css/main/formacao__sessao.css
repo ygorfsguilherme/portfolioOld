@@ -1,0 +1,34 @@
+/* Formação */
+
+.formacao {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.formacao__curso{
+	padding: 0 10px;
+	padding-bottom: 10px;
+	border: 1px gray solid;
+	border-radius: 10px;
+	border-left: 10px gray solid;
+	margin-bottom: 10px;
+	max-width: 380px;
+	width: 100%;
+}
+
+.formacao__curso-escola, .formacao__curso-date, .formacao__curso-descricao{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+	gap: 10px;
+}
+
+.formacao .formacao__curso:nth-child(2n){
+	border-left: 10px green solid;
+}
+
+.formacao .formacao__curso:nth-child(3n){
+	border-left: 10px blue solid;
+}

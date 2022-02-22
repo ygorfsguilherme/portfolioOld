@@ -1,0 +1,11 @@
+.skills__minha {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.skills__icon {
+	/*background: #66B3FF;*/
+	background: linear-gradient(to top right, rgb(97, 176, 255), rgb(143, 199, 255));
+	/*background: linear-gradient(to bottom, rgb(110, 153, 145), rgba(82, 82, 82));*/
+}
