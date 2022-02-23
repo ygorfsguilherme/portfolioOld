@@ -1,135 +1,135 @@
-.hobbies__meu__card{
+.hobbies__card{
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	width: auto;
 	height: auto;
+	width: auto;
 }
 
-.hobbies__icon {
+.hobbies__card__icon {
 	background: #7AC4C5;
 }
 
-.hobbies__meu__card p{
-	max-width: 200px;
+.hobbies__card__text {
 	padding: 0 5px;
+	max-width: 200px;
 }
 
 @media screen and (min-width:  0px){
-	.hobbies__meu__card {
+	.hobbies__card {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
 
-	.hobbies__meu__card .icon {
+	.hobbies__card .icon {
 		margin-right: 0;
 	}
 
-	.hobbies__meu {
+	.hobbies {
 		display: grid;
-		justify-content: center;
-		margin: 20px;
 		grid-template-columns: 1;
 		grid-template-rows: 3;
+		justify-content: center;
+		margin: 20px;
 	}
 
-	.hobbies__meu .leitura{
+	.leitura{
 		grid-area: leitura;
 		grid-row: 1;
 	}
 
-	.hobbies__meu .cozinha{
+	.cozinha{
 		grid-area: cozinha;
 		grid-row: 2;
 	}
 
-	.hobbies__meu .filme{
+	.filme{
 		grid-area: filme;
 		grid-row: 3;
 	}
 	
-	.hobbies__meu__card {
-		justify-content:center;
+	.hobbies__card {
 		align-items: center;
+		justify-content:center;
 		width: auto;
 	}
 
-	.hobbies__meu__card .icon {
+	.hobbies__card .icon {
 		margin-right: 0;
 	}
 
-	/*  Habilidades (Skills) */
+	.hobbies__card__text{
+		text-align: center;
+	}
 
 }
 
 @media screen and (min-width: 369px){
-	.hobbies__meu__card {
+	.hobbies__card {
 		height: 150px;
 	}
 }
 
+@media screen and (min-width: 379px ){
+	.hobbies__card__text {
+		text-align: start;
+	}
+}
+
 @media screen and (min-width: 690px){
-	.hobbies__meu {
+	.hobbies {
 		grid-template-columns: 2;
 		grid-template-rows: 2;
 		justify-content: space-around;
 	}
 
-	.hobbies__meu .leitura{
+	.leitura{
 		grid-column: 1;
 		grid-row: 1;
 	}
 
-	.hobbies__meu .cozinha{
+	.cozinha{
 		grid-column: 2;
 		grid-row: 1;
 	}
 
-	.hobbies__meu .filme{
+	.filme{
 		grid-column: 1 / 3;
 		grid-row: 3;
 	}
+
+
 }
 
-@media screen and (min-width: 930px){
-	.hobbies__meu {
+@media screen and (min-width: 1100px){
+	.hobbies {
 		grid-template-columns: 3;
 		grid-template-rows: 1;
 		justify-content: space-between;
 	}
 
-	.hobbies__meu .leitura{
+	.leitura{
 		grid-area: leitura;
 		grid-column: 1 / 2;
 	}
 
-	.hobbies__meu .cozinha{
+	.cozinha{
 		grid-area: cozinha;
 		grid-column: 2 / 3;
 
 	}
 
-	.hobbies__meu .filme{
+	.filme{
 		grid-area: filme;
 		grid-column: 3 / 4;
 	}
 
-	.hobbies__meu__card {
-		flex-direction: column;
-	}
-
-	.hobbies__meu__card p{
-		text-align: center;
-	}
-}
-
-@media screen and (min-width: 1100px){
-	.hobbies__meu__card {
+	.hobbies__card {
 		flex-direction: row;
 	}
 
-	.hobbies__meu__card p{
+	.hobbies__card__text{
 		text-align: start;
 	}
 }

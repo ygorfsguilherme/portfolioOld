@@ -36,7 +36,7 @@ input:focus, textarea:focus {
 	border: 1px solid rgba(81, 203, 238, 1);
 }
 
-#mensagem {
+.form__contato-mensagem textarea {
 	height: 120px;
 	max-height: 120px;
 	max-width: 394px;

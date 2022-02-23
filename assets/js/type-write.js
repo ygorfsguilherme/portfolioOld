@@ -1,5 +1,5 @@
 
-const sobre = "Óla, seja bem-vindo! ao meu portifolio sou Ygor Guilherme amante da aréa de TI, sou fascinado em estudar eletronica e programação, procuro sempre entender um pouco de tudo, ampliar os meus conhecimentos. Adoro um bom desafio para resolve e coisas que me fazem pensa fora da caixa."
+const mensagem = "“Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.” – Martin Fowler"
 const titulo = document.querySelector('#name');
 
 function typeWrite(elemento){
@@ -11,4 +11,4 @@ function typeWrite(elemento){
         }, 40 * i)});
 };
 
-typeWrite(sobre);
+typeWrite(mensagem);

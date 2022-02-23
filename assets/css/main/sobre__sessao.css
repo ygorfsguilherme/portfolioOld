@@ -1,0 +1,11 @@
+@media screen and (min-width: 0){
+	.sobre__sessao__mim {
+		margin: 10px 0px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.sobre__sessao__mim {
+		margin: 30px 20px;
+	}
+}
