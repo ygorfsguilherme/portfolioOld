@@ -1,10 +1,34 @@
+.hobbies__sessao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.hobbies__carrossel {
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.80);
+	display: flex;
+	height: auto;
+	width: 300px;
+	overflow: hidden;
+}
+
+.hobbies {
+	display: flex;
+	transition: transform 0.4s ease-in-out;
+	transform: translateX(0px);
+}
+
 .hobbies__card{
 	align-items: center;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	height: auto;
-	width: auto;
+	width: 300px;
 }
 
 .hobbies__card__icon {
@@ -14,122 +38,4 @@
 .hobbies__card__text {
 	padding: 0 5px;
 	max-width: 200px;
-}
-
-@media screen and (min-width:  0px){
-	.hobbies__card {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-
-	.hobbies__card .icon {
-		margin-right: 0;
-	}
-
-	.hobbies {
-		display: grid;
-		grid-template-columns: 1;
-		grid-template-rows: 3;
-		justify-content: center;
-		margin: 20px;
-	}
-
-	.leitura{
-		grid-area: leitura;
-		grid-row: 1;
-	}
-
-	.cozinha{
-		grid-area: cozinha;
-		grid-row: 2;
-	}
-
-	.filme{
-		grid-area: filme;
-		grid-row: 3;
-	}
-	
-	.hobbies__card {
-		align-items: center;
-		justify-content:center;
-		width: auto;
-	}
-
-	.hobbies__card .icon {
-		margin-right: 0;
-	}
-
-	.hobbies__card__text{
-		text-align: center;
-	}
-
-}
-
-@media screen and (min-width: 369px){
-	.hobbies__card {
-		height: 150px;
-	}
-}
-
-@media screen and (min-width: 379px ){
-	.hobbies__card__text {
-		text-align: start;
-	}
-}
-
-@media screen and (min-width: 690px){
-	.hobbies {
-		grid-template-columns: 2;
-		grid-template-rows: 2;
-		justify-content: space-around;
-	}
-
-	.leitura{
-		grid-column: 1;
-		grid-row: 1;
-	}
-
-	.cozinha{
-		grid-column: 2;
-		grid-row: 1;
-	}
-
-	.filme{
-		grid-column: 1 / 3;
-		grid-row: 3;
-	}
-
-
-}
-
-@media screen and (min-width: 1100px){
-	.hobbies {
-		grid-template-columns: 3;
-		grid-template-rows: 1;
-		justify-content: space-between;
-	}
-
-	.leitura{
-		grid-area: leitura;
-		grid-column: 1 / 2;
-	}
-
-	.cozinha{
-		grid-area: cozinha;
-		grid-column: 2 / 3;
-
-	}
-
-	.filme{
-		grid-area: filme;
-		grid-column: 3 / 4;
-	}
-
-	.hobbies__card {
-		flex-direction: row;
-	}
-
-	.hobbies__card__text{
-		text-align: start;
-	}
 }

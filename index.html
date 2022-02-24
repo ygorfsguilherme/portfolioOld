@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="assets/css/portfolio.css">
 
   <script src="assets/js/type-write.js" defer></script>
+  <script src="assets/js/hobbies__carrossel.js" defer></script>
+  <script src="assets/js/skills__carrossel.js" defer></script>
 
   <title>Ygor Guilherme</title>
 </head>
@@ -26,17 +28,6 @@
 
       <div class="perfil">
         <img src="assets/img/perfil/perfil.jpg" alt="imagem do perfil" id="perfil__img">
-        <div class="perfil__informacao">
-          <div class="perfil__aniversario">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4,3.01,4.9,3.01,6L3,20c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V6C21,4.9,20.1,4,19,4z M19,20 H5V10h14V20z M19,8H5V6h14V8z M9,14H7v-2h2V14z M13,14h-2v-2h2V14z M17,14h-2v-2h2V14z M9,18H7v-2h2V18z M13,18h-2v-2h2V18z M17,18 h-2v-2h2V18z"/></g>
-            </svg><span>27 de Janeiro de 1996</span>
-          </div>
-
-          <div class="perfil__localizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/></svg>
-            <span>Natal, RN - Brasil</span>    
-          </div>
-        </div>
       </div>
 
       <div class="perfil__sobre">
@@ -46,79 +37,80 @@
 
     <main class="bg-light b-radius-5">
       <section class="sobre__sessao">
-        <h2>Sobre min</h2>
+        <h2 class="titulo__sessao">Sobre min</h2>
         <p class="sobre__sessao__mim">
           Óla, seja bem-vindo! ao meu portifolio sou Ygor Guilherme amante da aréa de TI, sou fascinado em estudar eletronica e programação, procuro sempre entender um pouco de tudo, ampliar os meus conhecimentos. Adoro um bom desafio para resolve e coisas que me fazem pensa fora da caixa.
         </p>
       </section>
 
-      <section class="hobbies__sessao">
-        <h2>Hobbies</h2>
+      <section class="hobbies__skills">
+        <div class="hobbies__sessao">
 
-        <div class="hobbies">
+          <h2 class="titulo__sessao">Hobbies</h2>
+          
+          <div class="hobbies__carrossel">
+            <div class="hobbies">
 
-          <div class="hobbies__card leitura">
-            <div class="hobbies__card__icon icon">
-              <img src="assets/img/icon/leitura.png" alt="" height="64">
+              <div class="hobbies__card leitura">
+                <div class="hobbies__card__icon icon">
+                  <img src="assets/img/icon/leitura.png" alt="" height="64">
+                </div>
+                <p class="hobbies__card__text">Ler é algo que me faz criativo, adoro ler bons manga.</p>
+              </div>
+
+              <div class="hobbies__card cozinha">
+                <div class="hobbies__card__icon icon">
+                  <img src="assets/img/icon/cozinha.png" alt="" height="64">
+                </div>
+
+                <p class="hobbies__card__text">Gosto de mistura ingredientes e ver algo surgindo.</p>
+              </div>
+
+              <div class="hobbies__card filme">
+                <div class="hobbies__card__icon icon">
+                  <img src="assets/img/icon/filme.png" alt="" height="64">
+                </div>
+                <p class="hobbies__card__text">Adoro assistir filmes e series. Principalmente de ficção cientifica.</p>
+              </div>
+
             </div>
-            <p class="hobbies__card__text">Ler é algo que me faz criativo, adoro ler bons manga.</p>
           </div>
-
-          <div class="hobbies__card cozinha">
-            <div class="hobbies__card__icon icon">
-              <img src="assets/img/icon/cozinha.png" alt="" height="64">
-            </div>
-
-            <p class="hobbies__card__text">Gosto de mistura ingredientes e ver algo surgindo.</p>
-          </div>
-
-          <div class="hobbies__card filme">
-            <div class="hobbies__card__icon icon">
-              <img src="assets/img/icon/filme.png" alt="" height="64">
-            </div>
-            <p class="hobbies__card__text">Adoro assistir filmes e series. Principalmente de ficção cientifica.</p>
-          </div> 
         </div>
-      </section>
 
-      <section class="skills__sessao">
-        <h2>Habilidades (Skills)</h2>
+        <div class="skills__sessao">
+          <h2 class="titulo__sessao">Skills</h2>
+          <div class="skills__carrossel">
+            <div class="skills">
 
-        <div class="skills__minha">
+              <div class="skills__card leitura">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/leitura.png" alt="" height="64">
+                </div>
+                <p class="skills__card__text">Ler é algo que me faz criativo, adoro ler bons manga.</p>
+              </div>
 
-          <div class="icon skills__icon python ">
-            <img src="assets/img/icon/python-svgrepo.svg" alt="" height="60">
+              <div class="skills__card cozinha">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/python-svgrepo.svg" alt="" height="64">
+                </div>
+
+                <p class="skills__card__text">Alem de flask e django</p>
+              </div>
+
+              <div class="skills__card filme">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/filme.png" alt="" height="64">
+                </div>
+                <p class="skills__card__text">Adoro assistir filmes e series. Principalmente de ficção cientifica.</p>
+              </div>
+
+            </div>
           </div>
-
-          <div class="icon skills__icon javascript ">
-            <img src="assets/img/icon/javascript-svgrepo.svg" alt="" height="60">
-          </div>
-
-          <div class="icon skills__icon html ">
-            <img src="assets/img/icon/html5-svgrepo.svg" alt="" height="60">
-          </div>
-
-          <div class="icon skills__icon css ">
-            <img src="assets/img/icon/css3-svgrepo.svg" alt="" height="60">
-          </div>
-
-          <div class="icon skills__icon database ">
-            <img src="assets/img/icon/mysql-svgrepo.svg" alt="" height="60">
-          </div>
-
-          <div class="icon skills__icon django ">
-            <img src="assets/img/icon/mysql-svgrepo.svg" alt="" height="60">
-          </div>
-
-          <div class="icon skills__icon flask ">
-            <img src="assets/img/icon/flask.svg" alt="" height="60">
-          </div> 
-
         </div>
       </section>
 
       <section class="formacao__sessao">
-        <h2>Formação | Curso</h2>
+        <h2 class="titulo__sessao">Formação | Curso</h2>
         <div class="formacao">
           <div class="formacao__curso">
             <h4>Manutenção de Micro Computadores</h4>
@@ -178,34 +170,30 @@
       </section>
 
       <section class="experiencia__sessao">
-        <h2>Experiência Profissional</h2>
+        <h2 class="titulo__sessao">Experiência Profissional</h2>
       </section>
     </main>
 
     <footer class="bg-light b-radius-5">
-      <h2>Contato</h2>
+      <h2 class="titulo__sessao">Contato</h2>
 
       <form class="form__contato" action="" method="post">
         <div class="form__contato-nome-sobrenome">
           <div class="form__contato__nome">
-            <label for="cantato__nome">Nome:</label>
-            <input type="text" id="cantato__nome" />
+            <input type="text" id="cantato__nome" placeholder="Nome"/>
           </div>
 
           <div class="form__contato__sobrenome">
-            <label for="contato__sobrenome">Sobrenome:</label>
-            <input type="text" id="contato__sobrenome" />
+            <input type="text" id="contato__sobrenome" placeholder="Sobrenome" />
           </div>
         </div>
 
         <div class="form__contato-email">
-          <label for="form__email">E-mail:</label>
-          <input type="email" id="form__email" />
+          <input type="email" id="form__email" placeholder="E-mail" />
         </div>
 
         <div class="form__contato-mensagem">
-          <label for="form__mensagem">Mensagem:</label>
-          <textarea id="form__mensagem"></textarea>
+          <textarea id="form__mensagem" placeholder="Digite sua mensagem aqui"></textarea>
         </div>
 
         <button class="form_contato_botao" type="submit">Enviar</button>
