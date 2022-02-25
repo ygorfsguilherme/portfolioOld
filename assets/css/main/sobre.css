@@ -1,0 +1,25 @@
+.sobre {
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 8%;
+
+}
+
+@media screen and (min-width: 0){
+	.sobre {
+		flex-direction: column;
+		padding: 0 8%;
+
+	}
+}
+
+@media screen and (min-width: 984px){
+	.sobre {
+		flex-direction: row;
+		padding: 0;
+
+	}
+}

@@ -1,0 +1,28 @@
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+nav ul li{
+	list-style: none;
+	border-radius: 15px;
+	background: #84484A;
+	box-shadow: 0px 0px 12px -4px rgba(255, 255, 255,1);
+	padding: 10px 10px;
+	margin: 10px;
+}
+
+nav ul li:hover {
+	background: #A2585B;
+}
+
+nav ul li a {
+	color: white;
+}
+
