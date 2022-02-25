@@ -7,39 +7,44 @@
   
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/header/perfil.css">
+  <link rel="stylesheet" href="assets/css/main/main.css">
   <link rel="stylesheet" href="assets/css/main/sobre__sessao.css">
+  <link rel="stylesheet" href="assets/css/main/hobbies__skills.css">
   <link rel="stylesheet" href="assets/css/main/hobbies__sessao.css">
   <link rel="stylesheet" href="assets/css/main/skills__sessao.css">
   <link rel="stylesheet" href="assets/css/main/formacao__sessao.css">
+  <link rel="stylesheet" href="assets/css/footer/footer.css">
   <link rel="stylesheet" href="assets/css/footer/formulario.css">
   <link rel="stylesheet" href="assets/css/footer/copyright.css">
   <link rel="stylesheet" href="assets/css/portfolio.css">
 
   <script src="assets/js/type-write.js" defer></script>
-  <script src="assets/js/hobbies__carrossel.js" defer></script>
-  <script src="assets/js/skills__carrossel.js" defer></script>
+  <script src="assets/js/carrossel.js" defer></script>
 
   <title>Ygor Guilherme</title>
 </head>
 
 <body class="text-light">
   <div class="box">
-    <header class="bg-light b-radius-5">
+    <header>
+      <div class="cabecalho">
+        <div class="perfil">
+          <img src="assets/img/perfil/perfil.jpg" alt="imagem do perfil" id="perfil__img">
+        </div>
 
-      <div class="perfil">
-        <img src="assets/img/perfil/perfil.jpg" alt="imagem do perfil" id="perfil__img">
-      </div>
-
-      <div class="perfil__sobre">
-        <h3 id="name"></h3>
+        <div class="perfil__mensagem">
+          <h3 id="citacao"></h3>
+        </div>
       </div>
     </header>
 
-    <main class="bg-light b-radius-5">
+    <main>
       <section class="sobre__sessao">
-        <h2 class="titulo__sessao">Sobre min</h2>
+        <h1>Olá</h1>
         <p class="sobre__sessao__mim">
-          Óla, seja bem-vindo! ao meu portifolio sou Ygor Guilherme amante da aréa de TI, sou fascinado em estudar eletronica e programação, procuro sempre entender um pouco de tudo, ampliar os meus conhecimentos. Adoro um bom desafio para resolve e coisas que me fazem pensa fora da caixa.
+          Seja bem-vindo!
+          Sou <strong>Ygor Guilherme</strong> , entusiasta e estudante de desenvolvimento
+          web (fullstack). Amante da aréa de TI, sou fascinado em estudar eletronica e programação, procuro sempre entender um pouco de tudo e ampliar os meus conhecimentos, adoro um bom desafio.
         </p>
       </section>
 
@@ -82,26 +87,41 @@
           <div class="skills__carrossel">
             <div class="skills">
 
-              <div class="skills__card leitura">
-                <div class="skills__card__icon icon">
-                  <img src="assets/img/icon/leitura.png" alt="" height="64">
-                </div>
-                <p class="skills__card__text">Ler é algo que me faz criativo, adoro ler bons manga.</p>
-              </div>
-
-              <div class="skills__card cozinha">
+              <div class="skills__card python">
                 <div class="skills__card__icon icon">
                   <img src="assets/img/icon/python-svgrepo.svg" alt="" height="64">
                 </div>
-
-                <p class="skills__card__text">Alem de flask e django</p>
               </div>
 
-              <div class="skills__card filme">
+              <div class="skills__card javascript">
                 <div class="skills__card__icon icon">
-                  <img src="assets/img/icon/filme.png" alt="" height="64">
+                  <img src="assets/img/icon/javascript-svgrepo.svg" alt="" height="64">
                 </div>
-                <p class="skills__card__text">Adoro assistir filmes e series. Principalmente de ficção cientifica.</p>
+              </div>
+
+              <div class="skills__card html">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/html5-svgrepo.svg" alt="" height="64">
+                </div>
+              </div>
+
+              <div class="skills__card css">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/css3-svgrepo.svg" alt="" height="64">
+                </div>
+              </div>
+
+              <div class="skills__card flask">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/flask.svg" alt="" height="64">
+                </div>
+              </div>
+
+
+              <div class="skills__card mysql">
+                <div class="skills__card__icon icon">
+                  <img src="assets/img/icon/mysql-svgrepo.svg" alt="" height="64">
+                </div>
               </div>
 
             </div>
@@ -114,7 +134,7 @@
         <div class="formacao">
           <div class="formacao__curso">
             <h4>Manutenção de Micro Computadores</h4>
-            
+
             <div class="formacao__curso-escola">
               <img src="assets/img/icon/school.png" alt="" height="22">
               <span>CECAPI - Centro de Capacitação Profissional</span>
@@ -174,8 +194,10 @@
       </section>
     </main>
 
-    <footer class="bg-light b-radius-5">
+    <footer>
       <h2 class="titulo__sessao">Contato</h2>
+
+      <p>Gostaria de saber mais, entre em contato.</p>
 
       <form class="form__contato" action="" method="post">
         <div class="form__contato-nome-sobrenome">

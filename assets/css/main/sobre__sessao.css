@@ -1,11 +1,35 @@
+.sobre__sessao {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sobre__sessao h1 {
+	color: #8F4342;
+	font-size: 6rem;
+	margin-right: 8px;
+}
+
 @media screen and (min-width: 0){
-	.sobre__sessao__mim {
-		margin: 10px 0px;
+	.sobre__sessao {
+		flex-direction: column;
+		margin: 10px 10px;
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 768px){
-	.sobre__sessao__mim {
-		margin: 30px 20px;
+	.sobre__sessao {
+		flex-direction: row;
+		margin: 30px 40px;
+		text-align: start;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.sobre__sessao {
+		flex-direction: row;
+		margin: 30px 100px;
+		text-align: start;
 	}
 }

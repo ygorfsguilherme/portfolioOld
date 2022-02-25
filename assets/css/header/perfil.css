@@ -1,12 +1,11 @@
-header {
+
+.cabecalho {
 	align-items: center;
 	background: url("../../img/perfil/bg-header.jpg") no-repeat center/cover;
 	color: var(--white-300);
 	display: flex;
 	font-weight: 600;
-	flex-direction: row;
-	padding: 1rem;
-	height: 350px;
+	height: 400px;
 }
 
 .perfil {
@@ -24,38 +23,17 @@ header {
 	height: 150px;
 }
 
-.perfil__informacao {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-}
-
-.perfil__aniversario, .perfil__localizacao {
-	display: flex;
-	align-items: center;
-	text-shadow: 2px 2px 14px rgba(0,0,0,0.65);
-}
-
-.perfil__aniversario > svg, .perfil__localizacao > svg {
-	height: 22px;
-	margin-right: 10px;
-	fill: var(--white-300);
-}
-
-.perfil__sobre {
-	display: flex;
-	flex-direction: column;
-	height: 100px;
-}
-
 @media screen and (min-width:  0px){
-	header {
+	.cabecalho {
 		flex-direction: column;
+		padding: 0 10px;
 	}
 }
 
 @media screen and (min-width: 930px){
-	header {
+	.cabecalho {
 		flex-direction: row;
+		padding: 0 100px;
 	}
+
 }

@@ -1,0 +1,54 @@
+.hobbies__skills {
+	display: grid;
+}
+
+@media screen and (min-width: 0px){
+
+	.hobbies__skills {
+		justify-content: center;
+		grid-template-columns: auto;
+		grid-template-rows: 2;
+		gap: 0;
+	}
+
+	.skills__sessao {
+		grid-area: skills;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.hobbies__sessao {
+		grid-area: hobbies;
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+}
+
+@media screen and (min-width: 650px){
+	.hobbies__skills {
+		grid-template-columns: auto auto;
+		grid-template-rows: 1;
+		gap: 10px;
+	}
+
+	.skills__sessao {
+		grid-area: skills;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.hobbies__sessao {
+		grid-area: hobbies;
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+}
+@media screen and (min-width: 720px){
+	.hobbies__skills {
+		grid-template-columns: auto auto;
+		grid-template-rows: 1;
+		gap: 10%;
+	}
+}
