@@ -15,7 +15,10 @@ footer {
 	max-width: 400px;
 }
 
-.form__contato-nome-sobrenome, .form__contato-email, .form__contato-mensagem{
+.form__contato__nomeSobrenome,
+.form__contato--email,
+.form__contato--mensagem,
+.form__contato--assunto{
 	display: flex;
 	flex-direction: column;
 	text-align: start;
@@ -36,7 +39,7 @@ input:focus, textarea:focus {
 	border: 1px solid rgba(81, 203, 238, 1);
 }
 
-.form__contato-mensagem textarea {
+.form__contato--mensagem textarea {
 	height: 120px;
 	max-height: 120px;
 	max-width: 394px;
@@ -60,7 +63,7 @@ input:focus, textarea:focus {
 }
 
 @media screen and (min-width: 0){
-	.form__contato-nome-sobrenome {
+	.form__contato__nomeSobrenome {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
@@ -80,7 +83,7 @@ input:focus, textarea:focus {
 }
 
 @media screen and (min-width: 425px){
-	.form__contato-nome-sobrenome {
+	.form__contato__nomeSobrenome {
 		flex-direction: row;
 		justify-items: flex-start;
 	}

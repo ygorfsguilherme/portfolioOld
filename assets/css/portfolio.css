@@ -76,6 +76,9 @@ body{
 
 .titulo__sessao {
 	color: #8F4342;
+	font-size: 3.5rem;
+	text-shadow: 0px 0px 8px rgba(0,0,0,0.40);
+
 }
 
 svg{

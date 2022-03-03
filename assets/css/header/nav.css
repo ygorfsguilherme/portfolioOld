@@ -18,8 +18,6 @@ nav {
 nav ul {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -28,6 +26,7 @@ nav ul {
 
 #btn-menu {
 	display: none;
+	transition: 2s inherit;
 }
 
 #btn-menu:checked ~ ul {
@@ -40,19 +39,16 @@ nav ul {
 
 #btn-menu:checked ~ label {
 	background: dimgray;
+	transition-property: background;
+	transition-duration: 0.4s;
 }
 
-nav input:checked > .nav__botao__menu {
-	background: dimgray;
-}
 
 nav ul li{
 	align-items: center;
 	justify-content: center;
 	display: flex;
 	list-style: none;
-	background: #84484A;
-	padding: 10px 10px;
 	margin: 10px;
 	border-radius: 3px;
 }
@@ -62,7 +58,15 @@ nav ul li:hover {
 }
 
 nav ul li a {
+	align-items: center;
+	display: flex;
 	color: white;
+	display: flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	padding: 8px;
 }
 
 @media screen and (min-width: 0){
@@ -73,15 +77,22 @@ nav ul li a {
 	.nav__botao__menu {
 		display: flex;
 	}
+
 	nav ul {
 		height: 10px;
 		overflow: hidden;
 	}
+
+	nav ul li:hover {
+		background: dimgrey;
+	}
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 960px){
 	nav ul {
 		flex-direction: row;
+		justify-content: end;
+		align-items: center;
 	}
 
 	.nav__botao__menu {
@@ -91,5 +102,10 @@ nav ul li a {
 	nav ul {
 		height: auto;
 		overflow: unset;
+	}
+
+	nav ul li a {
+		font-size: 1.8rem;
+		font-weight: 700;
 	}
 }

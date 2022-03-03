@@ -12,17 +12,12 @@ header {
 	height: 400px;
 }
 
-.perfil {
+#perfil__img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 250px;
-}
-
-#perfil__img {
 	border: 4px #fff solid;
 	border-radius: 50%;
-	margin: 10px auto;
 	width: 200px;
 	height: 200px;
 }
@@ -34,6 +29,11 @@ header {
 }
 
 @media screen and (min-width:  0px){
+
+	#perfil__img {
+		margin: 50px 10px 10px 10px;
+	}
+
 	.cabecalho {
 		flex-direction: column;
 		padding: 0 10px;
@@ -41,6 +41,10 @@ header {
 }
 
 @media screen and (min-width: 930px){
+	#perfil__img {
+		margin: 10px 20px;
+	}
+
 	.cabecalho {
 		flex-direction: row;
 		padding: 0 100px;
