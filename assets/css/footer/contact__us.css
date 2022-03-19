@@ -1,0 +1,17 @@
+.contact-us {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100%;
+	gap: 5rem;
+}
+
+.contact-us__image {
+	margin: 10px;
+}
+
+@media screen and (max-width: 840px) {
+	.contact-us__image{
+		display: none;
+	}
+}
