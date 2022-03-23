@@ -4,16 +4,9 @@
 	justify-content: center;
 	gap: 10px;
 	flex-direction: column;
-	padding: 2px;
 	width: 100%;
 	max-width: 400px;
 }
-
-	.form__contact__nameLastname {
-		display: flex;
-		flex-direction: column;
-		text-align: start;
-	}
 
 	.form__contact__mensagem {
 		height: 120px;
@@ -73,6 +66,7 @@
 			flex-direction: column;
 			align-items: start;
 			width: 100%;
+			margin: 0;
 			margin-bottom: 10px;
 		}
 

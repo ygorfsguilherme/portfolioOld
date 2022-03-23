@@ -33,6 +33,7 @@
 	<script src="assets/js/typeWrite.js" defer></script>
 	<script src="assets/js/carrossel.js" defer></script>
 	<script src="assets/js/project.js" defer></script>
+	<script src="assets/js/education.js" defer></script>
 	<!---- Javascript End ---->
 
 	<title>Ygor Guilherme</title>
@@ -63,9 +64,10 @@
 
 				<ul>
 					<li><a href="assets/cv/curriculo.pdf" target="_blank">Download CV</a></li>
-					<li><a href="#projetos">Projetos</a></li>
-					<li><a href="#contato">Contatos</a></li>
-					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#education">Formação</a></li>
+					<li><a href="#project">Projetos</a></li>
+					<li><a href="#contact">Contatos</a></li>
+					<li><a href="#about">Sobre</a></li>
 				</ul>
 			</nav>
 			<!---- Navegation Bar End ---->
@@ -77,7 +79,7 @@
 		<main>
 
 			<!---- About Section Start ---->
-			<section class="sobre" id="sobre">
+			<section class="sobre" id="about">
 
 				<div class="sobre__sessao">
 					<h1 id="ola">Olá</h1>
@@ -94,7 +96,7 @@
 					<!-- Hobbies Section -->
 					<div class="hobbies__sessao">
 
-						<h2 class="section__title">Hobbies</h2>
+						<h2 class="u-section__title">Hobbies</h2>
 
 						<div class="hobbies__carrossel">
 							<div class="hobbies">
@@ -129,7 +131,7 @@
 
 					<!---- Skills Section Start ---->
 					<div class="skills__sessao">
-						<h2 class="section__title">Skills</h2>
+						<h2 class="u-section__title">Skills</h2>
 						<div class="skills__carrossel">
 							<div class="skills">
 
@@ -180,95 +182,22 @@
 			<!---- About Section End ---->
 
 			<!---- Education Section Start ---->
-			<section class="formacao__sessao" id="formacao">
+			<section class="c-education__section" id="education">
 
-				<div class="formacao__titulo">
-					<h2 class="section__title">Formação</h2>
-				</div>
+				<h2 class="u-section__title">Formação</h2>
 
-				<div class="formacao">
-					<div class="formacao__curso">
-						<h4>Manutenção de Micro Computadores</h4>
-
-						<div class="formacao__curso-escola">
-							<img src="assets/img/icon/school.png" alt="" height="22">
-							<span>CECAPI - Centro de Capacitação Profissional</span>
-						</div>
-
-						<div class="formacao__curso-date">
-							<img src="assets/img/icon/calendar.svg" alt="" height="22">
-							<span>19/08/2015</span>
-						</div>
-
-						<div class="formacao__curso-descricao"> 
-							<img src="assets/img/icon/gear.svg" height="22">
-							<span>Densenvolvido manutenção de computadores e notebooks, instalação de sistema opereracional windows e linux, instalação de software como word</span>
-						</div>
-					</div>
-
-					<div class="formacao__curso">
-						<h4>Python do Basico ao Avançado</h4>
-						<div class="formacao__curso-escola">
-							<img src="assets/img/icon/school.png" alt="" height="22">
-							<span>Udemy</span>
-						</div>
-
-						<div class="formacao__curso-date">
-							<img src="assets/img/icon/calendar.svg" alt="" height="22">
-							<span>19/08/2021</span>
-						</div>
-						<div class="formacao__curso-descricao"> 
-							<img src="assets/img/icon/gear.svg" height="22">
-							<span>Foi apresendado Django, PyQT5, Selenium, Regexp, Mysql e SQL</span>
-						</div>
-					</div>
-
-					<div class="formacao__curso">
-						<h4>Python e Django para web</h4>
-						<div class="formacao__curso-escola">
-							<img src="assets/img/icon/school.png" alt="" height="22">
-							<span>Udemy</span>
-						</div>
-
-						<div class="formacao__curso-date">
-							<img src="assets/img/icon/calendar.svg" alt="" height="22">
-							<span>20/09/2021</span>
-						</div>
-
-						<div class="formacao__curso-descricao">
-							<img src="assets/img/icon/gear.svg" height="22">
-							<span>Teve como objetivo aprende tecnologia para web como HTML5, CSS3, Bootstrap, Javascript, ES6, JQuery, Python, Django</span>
-						</div>
-					</div>
-
-					<div class="formacao__curso">
-						<h4>Desenvolvimento web</h4>
-						<div class="formacao__curso-escola">
-							<img src="assets/img/icon/school.png" alt="" height="22">
-							<span>Alura</span>
-						</div>
-
-						<div class="formacao__curso-date">
-							<img src="assets/img/icon/calendar.svg" alt="" height="22">
-							<span>Cursando</span>
-						</div>
-
-						<div class="formacao__curso-descricao">
-							<img src="assets/img/icon/gear.svg" height="22">
-							<span>Aprendendo tecnologia para web como HTML5, CSS3, Javascript e metodologia agil.</span>
-						</div>
-					</div>
-				</div>
+				<div class="c-education__container" data-education ></div>
 
 			</section>
 			<!---- Education Section End ---->
 
 
 			<!-- Project Section Start -->
-			<section class="project" id="projetos">
+			<section class="c-project__section" id="project">
 
-				<h2 class="section__title">Projetos</h2>
-				<div class="project__container" data-project></div>
+				<h2 class="u-section__title">Projetos</h2>
+
+				<div class="c-project__container" data-project></div>
 
 			</section>
 			<!-- Project Section End-->
@@ -282,7 +211,7 @@
 
 			<h3>Gostaria de saber mais, entre em contato.</h3>
 
-			<div class="contact-us">
+			<div class="contact-us" id="contact">
 
 				<!---- Image Contact Start ---->
 				<img class="contact-us__image" src="assets/img/section/contact-us.svg" alt="Contact Us">

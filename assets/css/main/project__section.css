@@ -1,4 +1,4 @@
-.project {
+.c-project__section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6,15 +6,15 @@
 	margin: 50px 0;
 }
 
-.project__container {
+.c-project__container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.project__card {
+.c-project__card {
 	background: #FFFFFF;
-	border-radius: 4px;
+	border-radius: 10px;
 	box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.80);
 	display: flex;
 	flex-direction: column;
@@ -24,34 +24,61 @@
 	min-width: 300px;
 	max-width: 365px;
 	margin: 20px 20px;
+	position: relative;
+	overflow: hidden;
 }
 
-.project__card__image {
+.c-project__card__image {
 	align-self: center;
 	box-sizing: border-box;
-	border-radius: 4px 4px 0px 0px;
 	width: 100%;
 	height: 220px;
 }
 
-.project__card__footer {
-	display: flex;
-	justify-content: space-between;
-	justify-self: end;
-	padding: 10px;
-	height: 60px;
+.c-project__card__footer {
 	box-sizing: border-box;
 	background: #FAFAFA;
-	border-radius: 0 0 4px 4px;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-self: end;
+	overflow: hidden;
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+	transition: .4s;
 }
-.project__card__description {
+
+.c-project__card__footer:hover {
+	height: 150px;
+	animation: over .6s;
+	transition: all .8s;
+}
+
+@keyframes over {
+	0% { overflow: hidden; }
+	100% { overflow: visible; }
+}
+
+.infomacao {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+}
+
+.c-project__card__description {
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 	align-items: center;
 }
 
-.project__card__title {
+.c-project__card__title {
 	box-sizing: border-box;
 	margin: 0;
 	font-weight: bold;
@@ -60,7 +87,7 @@
 	width: 100%;
 }
 
-.project__card__subtitle {
+.c-project__card__subtitle {
 	box-sizing: border-box;
 	display: flex;
 	font-size: 14px;
@@ -68,13 +95,13 @@
 	margin: 0;
 }
 
-.project__card__links {
+.c-project__card__links {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-.project__card__link {
+.c-project__card__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -85,24 +112,24 @@
 	height: 20px;
 }
 
-.project__card__link__icon{
+.c-project__card__link__icon{
 	height: 16px;
 }
 
 @media screen and (min-width: 0){
-	.project__container {
+	.c-project__container {
 		justify-content: center;
 	}
 }
 
 @media screen and (min-width: 790px) {
-	.project__container {
+	.c-project__container {
 		justify-content: space-around;
 	}
 }
 
 @media screen and (min-width: 1275px){
-	.project__container {
+	.c-project__container {
 		justify-content: space-between;
 	}
 }

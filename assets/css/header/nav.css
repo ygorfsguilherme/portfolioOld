@@ -1,10 +1,10 @@
 nav {
 	margin: 0;
-	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 100;
 }
 
 .nav__botao__menu {
@@ -28,6 +28,9 @@ nav ul {
 	display: none;
 	transition: 2s inherit;
 }
+#btn-menu ~ label {
+	background: dimgray;
+}
 
 #btn-menu:checked ~ ul {
 	height: auto;
@@ -36,13 +39,6 @@ nav ul {
 	z-index: 100;
 	height: 100%;
 }
-
-#btn-menu:checked ~ label {
-	background: dimgray;
-	transition-property: background;
-	transition-duration: 0.4s;
-}
-
 
 nav ul li{
 	align-items: center;
@@ -70,6 +66,10 @@ nav ul li a {
 }
 
 @media screen and (min-width: 0){
+	nav {
+		position: fixed;
+	}
+
 	nav ul {
 		flex-direction: column;
 	}
@@ -89,6 +89,9 @@ nav ul li a {
 }
 
 @media screen and (min-width: 960px){
+	nav {
+		position: absolute;
+	}
 	nav ul {
 		flex-direction: row;
 		justify-content: end;

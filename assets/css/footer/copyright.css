@@ -1,11 +1,14 @@
 .copyright { 
 	display: flex;
+	box-sizing: border-box;
+	background: #556372;
+	gap: 10px;
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.5rem;
+	margin-top: 2rem;
 	padding: 1rem;
-	margin: 2rem 1rem 1rem 1rem;
-	gap: 10px;
+	width: 100%;
 }
