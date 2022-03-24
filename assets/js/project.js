@@ -4,7 +4,8 @@ const info = [
 	{
 		'image': 'assets/img/projeto/projeto-criptdex.png',
 		'title': 'Criptdex - Decodificador',
-		'description': 'Codificado de texto utilizando simples.',
+		'subtitle': 'Codificado de texto utilizando simples.',
+		'description': 'Decodificador e codificado de texto, que substitui parte da palavra por outra codificação, dificultando o entendimento.',
 		'github_link': 'https://github.com/ygorfsguilherme/criptdex',
 		'view_app': 'https://ygorfsguilherme.github.io/criptdex/',
 	},

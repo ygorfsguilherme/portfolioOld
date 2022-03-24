@@ -3,7 +3,6 @@ nav {
 	top: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;
 	z-index: 100;
 }
 
@@ -13,6 +12,7 @@ nav {
 	color: #fff;
 	align-self: end;
 	padding: 10px;
+	box-shadow: 1px 0px 5px 1px rgba(29, 41, 53, 0.8);
 }
 
 nav ul {
@@ -26,16 +26,16 @@ nav ul {
 
 #btn-menu {
 	display: none;
-	transition: 2s inherit;
 }
+
 #btn-menu ~ label {
-	background: dimgray;
+	background: #1D2935;
 }
 
 #btn-menu:checked ~ ul {
 	height: auto;
 	overflow: unset;
-	background: gray;
+	background: #2D4052;
 	z-index: 100;
 	height: 100%;
 }
@@ -50,7 +50,7 @@ nav ul li{
 }
 
 nav ul li:hover {
-	background: #A2585B;
+	background: #1D2935;
 }
 
 nav ul li a {
@@ -84,7 +84,7 @@ nav ul li a {
 	}
 
 	nav ul li:hover {
-		background: dimgrey;
+		background: #1D2935
 	}
 }
 
