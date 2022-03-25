@@ -2,7 +2,7 @@ let projectSection = document.querySelector('[data-project]')
 
 const info = [
 	{
-		'image': 'assets/img/projeto/projeto-criptdex.png',
+		'image': 'assets/img/project/project-criptdex.png',
 		'title': 'Criptdex - Decodificador',
 		'subtitle': 'Codificado de texto utilizando simples.',
 		'description': 'Decodificador e codificado de texto, que substitui parte da palavra por outra codificação, dificultando o entendimento.',
@@ -11,28 +11,28 @@ const info = [
 	},
 
 	{
-		'image': 'assets/img/projeto/projeto-jogo-da-forca.png',
+		'image': 'assets/img/project/project-jogo-da-forca.png',
 		'title': 'Jogo da forca', 
 		'subtitle': 'Para jogar sozinho ou com amigo.',
-		'description': 'Um breve descrição sobre o projeto, de forma simple e clara',
+		'description': 'Um breve descrição sobre o project, de forma simple e clara',
 		'github_link': 'https://github.com/ygorfsguilherme/jogo-da-forca',
 		'view_app': 'https://ygorfsguilherme.github.io/jogo-da-forca/',
 	},
 
 	{
-		'image': 'assets/img/projeto/projeto-pyformail.png',
-		'title': 'Pyformail',
-		'subtitle': 'Envia formulario de contato para o email',
-		'description' : 'Um breve descrição sobre o projeto, de forma simple e clara',
-		'github_link': 'https://github.com/ygorfsguilherme/api-pyformail',
-		'view_app': 'https://github.com/ygorfsguilherme/api-pyformail#o-que-pyformail',
+		'image': 'assets/img/project/project-portfolio.png',
+		'title': 'Portfolio',
+		'subtitle': 'Criado para expor meus projetos',
+		'description' : 'Foi um dos desafio do programa ONE da oracle e alura, afim de colocar todos os meus projetos em um só lugar.',
+		'github_link': 'https://github.com/ygorfsguilherme/portfolio',
+		'view_app': 'https://ygorfsguilherme.github.io/portfolio/',
 	},
 
 	{
-		'image': 'assets/img/projeto/projeto-pyformail.png',
+		'image': 'assets/img/project/project-pyformail.png',
 		'title': 'Pyformail',
 		'subtitle': 'Envia formulario de contato para o email',
-		'description': 'Um breve descrição sobre o projeto, de forma simple e clara',
+		'description': 'Uma api que envia informações de um formulario para um email, criado para envia informações de contato.',
 		'github_link': 'https://github.com/ygorfsguilherme/api-pyformail',
 		'view_app': 'https://github.com/ygorfsguilherme/api-pyformail#o-que-pyformail',
 	},

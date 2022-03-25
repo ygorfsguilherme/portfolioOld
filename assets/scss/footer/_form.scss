@@ -1,0 +1,88 @@
+.c-form__contact {
+	display: flex;
+	align-self: end;
+	justify-content: center;
+	gap: 10px;
+	flex-direction: column;
+	width: 100%;
+	max-width: 400px;
+}
+
+.c-form__contact__mensagem {
+	height: 120px;
+	max-height: 120px;
+	max-width: 394px;
+}
+
+.c-form__contact__lastname {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.c-form__contact__button {
+	background: #2D46A3;
+	padding: .8rem;
+	margin: 0px 2px;
+	border-radius: 8px;
+	border: 0;
+	color: var(--white-300);
+	font-size: 1.8rem;
+	font-weight: 800;
+	transition: all 1s;
+
+	&:hover {
+		background: #3F57B0;
+		transition: all 1s;
+	}
+}
+
+.c-form__contact__input,
+.c-form__contact__textarea {
+	margin-top: 8px;
+	padding: .8rem;
+	border-radius: 8px;
+	border: 0;
+	transition: all 0.30s ease-in-out;
+	outline: none;
+	border: 1px solid #DDDDDD;
+}
+
+.c-form__contact__input:focus,
+.c-form__contact__textarea:focus {
+	box-shadow: 0 0 6px #81B3E4;
+	border: 1.2px solid #81B3E4;
+}
+
+@media screen and (min-width: 0){
+	.c-form__contact__nameLastname {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.c-form__contact__name {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.c-form__contact__name .c-form__contact__input {
+		width: calc(100% - 16px);
+	}
+}
+
+@media screen and (min-width: 425px){
+	.c-form__contact__nameLastname {
+		flex-direction: row;
+		justify-items: flex-start;
+	}
+
+	.c-form__contact__name {
+		margin-right: 15px;
+		margin-bottom: 0;
+	}
+}

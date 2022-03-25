@@ -7,34 +7,14 @@
 
 	<!-- CSS Start -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
-
-	<link rel="stylesheet" href="assets/css/header/perfil.css">
-	<link rel="stylesheet" href="assets/css/header/nav.css">
-
-	<link rel="stylesheet" href="assets/css/main/main.css">
-	<link rel="stylesheet" href="assets/css/main/about.css">
-	<link rel="stylesheet" href="assets/css/main/about__section.css">
-	<link rel="stylesheet" href="assets/css/main/hobbies__skills.css">
-	<link rel="stylesheet" href="assets/css/main/hobbies__section.css">
-	<link rel="stylesheet" href="assets/css/main/skills__section.css">
-	<link rel="stylesheet" href="assets/css/main/education__section.css">
-	<link rel="stylesheet" href="assets/css/main/project__section.css">
-
-	<link rel="stylesheet" href="assets/css/footer/footer.css">
-	<link rel="stylesheet" href="assets/css/footer/contact__us.css">
-	<link rel="stylesheet" href="assets/css/footer/form.css">
-	<link rel="stylesheet" href="assets/css/footer/social__media.css">
-	<link rel="stylesheet" href="assets/css/footer/copyright.css">
-
-	<link rel="stylesheet" href="assets/css/portfolio.css">
+	<link rel="stylesheet" href="assets/css/portfolio__style.css">
 	<!---- CSS End ---->
 
 	<!---- Javascript Start ---->
-	<script src="assets/js/typeWrite.js" defer></script>
-	<script src="assets/js/carrossel.js" defer></script>
-	<script src="assets/js/project.js" defer></script>
-	<script src="assets/js/education.js" defer></script>
+	<script type="module" src="assets/js/main.js" defer></script>
 	<!---- Javascript End ---->
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 	<title>Ygor Guilherme</title>
 </head>
@@ -170,6 +150,7 @@
 										<img src="assets/img/icon/mysql-icon.svg" alt="" height="64">
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -207,36 +188,36 @@
 
 
 		<!---- Footer Start ----> 
-		<footer>
+		<footer class="c-footer">
 
 			<h3>Gostaria de saber mais, entre em contato.</h3>
 
-			<div class="contact-us" id="contact">
+			<div class="c-contact-me" id="contact">
 
 				<!---- Image Contact Start ---->
-				<img class="contact-us__image" src="assets/img/section/contact-us.svg" alt="Contact Us">
+				<img class="c-contact-me__image" src="assets/img/section/contact-me.svg" alt="Contact Me">
 				<!---- Image Contact End ---->
 
 				<!---- Form Start---->
-				<form class="form__contact" action="https://api-pyformail.herokuapp.com/form?mail=ygorfsguilherme@gmail.com" method="post">
+				<form class="c-form__contact" action="https://api-pyformail.herokuapp.com/form?mail=ygorfsguilherme@gmail.com" method="post">
 
-					<div class="form__contact__nameLastname">
-						<div class="form__contact__name">
-							<input class="form__contact__input" name="name" type="text" placeholder="Nome"/>			
+					<div class="c-form__contact__nameLastname">
+						<div class="c-form__contact__name">
+							<input class="c-form__contact__input" name="name" type="text" placeholder="Nome"/>			
 						</div>
 
-						<div class="form__contact__lastname">
-							<input class="form__contact__input" name="lastname" type="text" placeholder="Sobrenome" />
+						<div class="c-form__contact__lastname">
+							<input class="c-form__contact__input" name="lastname" type="text" placeholder="Sobrenome" />
 						</div>
 					</div>
 
-					<input class="form__contact__input form__contact__email" name="email" type="email" placeholder="E-mail" />
+					<input class="c-form__contact__input c-form__contact__email" name="email" type="email" placeholder="E-mail" />
 
-					<input class="form__contact__input form__contact__assunto" name="assunto" type="text" placeholder="Assunto" />
+					<input class="c-form__contact__input c-form__contact__assunto" name="assunto" type="text" placeholder="Assunto" />
 
-					<textarea class="form__contact__textarea form__contact__mensagem" name="mensagem" id="form__mensagem" placeholder="Digite sua mensagem aqui"></textarea>
+					<textarea class="c-form__contact__textarea c-form__contact__mensagem" name="mensagem" id="c-form__mensagem" placeholder="Digite sua mensagem aqui"></textarea>
 
-					<button class="form__contact__button" type="submit">Enviar mensagem</button>
+					<button class="c-form__contact__button" type="submit">Enviar mensagem</button>
 				</form>
 				<!---- Form End ---->
 

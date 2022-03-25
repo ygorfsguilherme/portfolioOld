@@ -1,3 +1,17 @@
+@import "header/_perfil.scss";
+@import "header/_nav.scss";
+@import "main/_about.scss";
+@import "main/_about__section.scss";
+@import "main/_hobbies__skills.scss";
+@import "main/_hobbies__section.scss";
+@import "main/_skills__section.scss";
+@import "main/_education__section.scss";
+@import "main/_project__section.scss";
+@import "footer/_footer.scss";
+@import "footer/_contact-me.scss";
+@import "footer/_form.scss";
+@import "footer/_copyright.scss";
+
 @font-face {
 	font-family: 'PT Sans';
 	src: url('../fonts/pt-sans/PTSans-Regular.ttf') format("truetype");
@@ -19,7 +33,7 @@ html {
 
 body{
 	align-items: center;
-	background: linear-gradient(to bottom, rgb(110, 153, 145), rgba(82, 82, 82));
+	background: linear-gradient(to bottom, rgb(110, 153, 145), rgb(82, 82, 82));
 	background-attachment: fixed;
 	display: flex;
 	font-size: 1.6rem;
@@ -81,4 +95,3 @@ a{
 	min-width: 80px;
 	min-height: 80px;
 }
-

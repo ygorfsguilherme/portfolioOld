@@ -23,8 +23,9 @@
 .c-education__card__header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: cadetblue;
-  background-image: url('../../img/icon/education/graduation.svg');
+  background-image: url('../img/icon/education/graduation.svg');
   height: 100px;
   width: 100%;
   position: relative;
@@ -80,4 +81,10 @@
 	.c-education__container {
 		justify-content: center;
 	}
+}
+
+@media screen and (max-width: 1079px){
+  .c-education__container {
+    justify-content: space-around;
+  }
 }

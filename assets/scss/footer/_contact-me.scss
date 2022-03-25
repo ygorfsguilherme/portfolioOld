@@ -1,4 +1,4 @@
-.contact-us {
+.c-contact-me {
 	display: flex;
 	align-items: flex-end;
 	box-sizing: border-box;
@@ -8,12 +8,12 @@
 	padding: .6rem;
 }
 
-.contact-us__image {
+.c-contact-me__image {
 	margin: 10px;
 }
 
 @media screen and (max-width: 840px) {
-	.contact-us__image{
+	.c-contact-me__image{
 		display: none;
 	}
 }
