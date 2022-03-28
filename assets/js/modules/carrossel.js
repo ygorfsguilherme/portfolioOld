@@ -1,33 +1,20 @@
-let quantidade_card_skills = 5;
-let index_skills = 0;
-let card_skills = document.querySelector(".skills");
-let posicao_skills = 74
-
-let quantidade_card_hobbies = 3;
-let index_hobbies = 0;
-let card_hobbies = document.querySelector(".hobbies");
-let posicao_hobbies = 300
-
-function carrosselHobbies(){
-	index_hobbies++
-	if(index_hobbies > quantidade_card_hobbies -1){
-		index_hobbies = 0;
+export class Carrossel{
+	constructor(element){
+		this.elementTarget = element.target;
+		this.elementCount = element.countCard;
+		this.elementIndex = element.index;
+		this.elementPosition = element.position;
+		this.elementLimite = element.limite;
 	}
 
-	let posicao_x = -index_hobbies * posicao_hobbies + "px";
-	card_hobbies.style.transform = 'translateX('+posicao_x+')'
-}
+	move(){
+		this.elementIndex++
+		if(this.elementIndex > this.elementCount -this.elementLimite){
+			this.elementIndex = 0;
+		}
 
-function carrosselSkills(){
-	index_skills++
-	if(index_skills > quantidade_card_skills -1){
-		index_skills = 0;
+		let posicao_x = `${-this.elementIndex * this.elementPosition}px`;
+
+		this.elementTarget.style.transform = `translateX(${posicao_x})`
 	}
-
-	let posicao_x = -index_skills * posicao_skills + "px";
-	card_skills.style.transform = 'translateX('+posicao_x+')'
 }
-
-setInterval(carrosselSkills, 3500);
-setInterval(carrosselHobbies, 3500);
-

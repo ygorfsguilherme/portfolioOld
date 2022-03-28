@@ -83,7 +83,8 @@ nav ul li {
   border-radius: 3px; }
 
 nav ul li:hover {
-  background: #1D2935; }
+  background: #1D2935;
+  border-bottom: 3px #8F4342 solid; }
 
 nav ul li a {
   align-items: center;
@@ -225,41 +226,36 @@ nav ul li a {
   padding: 0 5px;
   max-width: 200px; }
 
-.skills__sessao {
+.c-skills__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%; }
 
-.skills__carrossel {
+.c-skills__carrossel {
   align-items: center;
   background: #FFFFFF;
   border-radius: 10px;
-  box-shadow: 0px 0px 14px -7px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   display: flex;
   height: auto;
   width: 300px;
   overflow: hidden; }
 
-.skills {
+.c-skills__container {
   display: flex;
   transition: transform 0.4s ease-in-out;
   transform: translateX(0px); }
 
-.skills__card {
+.c-skills__card {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: auto;
-  margin-right: 10px; }
+  height: auto; }
 
-.skills__card__icon {
+.c-skills__card__icon {
   background: #7AC4C5; }
-
-.skills__card__text {
-  padding: 0 5px;
-  max-width: 200px; }
 
 .c-education__section {
   display: flex;
@@ -286,7 +282,7 @@ nav ul li a {
   align-items: center;
   background: cadetblue;
   background-image: url("../img/icon/education/graduation.svg");
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   position: relative;
   box-shadow: 1px 0px 4px 1px rgba(0, 0, 0, 0.3); }
@@ -312,7 +308,7 @@ nav ul li a {
   position: absolute;
   bottom: calc(-76px / 2);
   right: calc(50% - width);
-  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4); }
 
 .c-education__card__image:hover {
   transform: rotate(360deg);
@@ -574,8 +570,7 @@ html {
   font-weight: 400;
   font-size: 62.5%;
   margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; }
+  padding: 0; }
 
 body {
   align-items: center;
@@ -587,6 +582,7 @@ body {
   height: 100vh;
   padding: 0;
   position: relative;
+  scroll-behavior: smooth;
   margin: 0; }
 
 #citacao {
@@ -621,7 +617,7 @@ a {
 
 .icon {
   align-items: center;
-  box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   display: flex;
   justify-content: center;
