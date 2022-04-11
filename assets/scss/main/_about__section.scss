@@ -1,10 +1,10 @@
-.sobre__sessao {
+.about__section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#ola {
+#hello {
 	color: #8F4342;
 	font-size: 8rem;
 	margin-right: 8px;
@@ -12,12 +12,12 @@
 
 }
 
-.sobre__sessao__mim {
+.about__me {
 	max-width: 480px;
 }
 
 @media screen and (min-width: 0){
-	.sobre__sessao {
+	.about__section {
 		flex-direction: column;
 		margin: 10px 10px;
 		text-align: center;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (min-width: 768px){
-	.sobre__sessao {
+	.about__section {
 		flex-direction: row;
 		margin: 30px 0;
 		text-align: start;
@@ -33,7 +33,7 @@
 }
 
 @media screen and (min-width: 900px){
-	.sobre__sessao {
+	.about__section {
 		flex-direction: row;
 		margin-right: 20px;
 		text-align: start;

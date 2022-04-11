@@ -12,11 +12,11 @@ export class Card{
 
   cardElement(infoElement, template){
     for(let i = 0; i < infoElement.length; i++){
-      this.creatorTemplate(infoElement[i], template);
+      this.createTemplate(infoElement[i], template);
     };
   }
 
-  creatorTemplate(infoElement, template){
+  createTemplate(infoElement, template){
     let atr = Object.keys(infoElement);
     var temp = template;
     for(let i = 0; i < atr.length; i++){

@@ -1,22 +1,22 @@
-.hobbies__skills {
+.c-hobbies__skills {
 	display: flex;
 	gap: 10px;
 }
 
 @media screen and (min-width: 0){
-	.hobbies__skills {
+	.c-hobbies__skills {
 		flex-direction: column;
 	}
 }
 
 @media screen and (min-width: 620px) {
-	.hobbies__skills {
+	.c-hobbies__skills {
 		flex-direction: row;
 	}
 }
 
 @media screen and (min-width:  984px){
-	.hobbies__skills {
+	.c-hobbies__skills {
 		flex-direction: column;
 	}
 }
